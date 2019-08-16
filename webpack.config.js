@@ -29,6 +29,7 @@ module.exports = {
             loader: MiniCssExtractPlugin.loader,
             options: {
               hmr: true,
+              reloadAll: true,
             },
           },
           {
@@ -74,5 +75,15 @@ module.exports = {
     clientLogLevel: 'silent',
     bonjour: true,
     hot: true,
+    inline: true,
+    stats: {
+      // Config for minimal console.log mess.
+      colors: true,
+      version: false,
+      hash: false,
+      timings: false,
+      chunks: false,
+      chunkModules: false,
+    },
   },
 }
